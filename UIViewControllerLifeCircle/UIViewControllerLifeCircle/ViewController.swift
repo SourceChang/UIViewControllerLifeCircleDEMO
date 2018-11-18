@@ -14,6 +14,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    
+    @IBAction func manualShowAnotherViewControllerWithAnimation(_: Any) {
+        let anotherViewController = AnotherViewController(nibName: nil, bundle: nil)
+        navigationController?.pushViewController(anotherViewController, animated: true)
+    }
+    
+    
+    @IBAction func manualShowAnotherViewControllerWithoutAnimation(_: Any) {
+        let anotherViewController = AnotherViewController(nibName: nil, bundle: nil)
+        navigationController?.pushViewController(anotherViewController, animated: false)
+    }
 
 
 }

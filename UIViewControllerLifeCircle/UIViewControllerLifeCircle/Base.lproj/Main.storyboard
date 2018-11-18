@@ -32,6 +32,20 @@
                                     <segue destination="vuP-q5-Nec" kind="show" animates="NO" id="1RO-cU-3vg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVR-a9-2K1">
+                                <rect key="frame" x="81" y="378.5" width="213" height="30"/>
+                                <state key="normal" title="显示页面 B（代码显示有动画）"/>
+                                <connections>
+                                    <action selector="manualShowAnotherViewControllerWithAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wmg-h1-Fta"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHO-WF-22u">
+                                <rect key="frame" x="73.5" y="418.5" width="228" height="30"/>
+                                <state key="normal" title="显示页面 B（代码显示没有动画）"/>
+                                <connections>
+                                    <action selector="manualShowAnotherViewControllerWithoutAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3iy-TA-61m"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -39,6 +53,10 @@
                             <constraint firstItem="3GB-O2-aot" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="Ahy-V3-3he"/>
                             <constraint firstItem="Kct-TU-pRM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="20" id="DxZ-bb-Pya"/>
                             <constraint firstItem="Kct-TU-pRM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UQ5-64-06E"/>
+                            <constraint firstItem="UHO-WF-22u" firstAttribute="centerX" secondItem="KVR-a9-2K1" secondAttribute="centerX" id="Vns-zf-WXQ"/>
+                            <constraint firstItem="KVR-a9-2K1" firstAttribute="centerX" secondItem="Kct-TU-pRM" secondAttribute="centerX" id="gCd-uj-ZBY"/>
+                            <constraint firstItem="KVR-a9-2K1" firstAttribute="centerY" secondItem="Kct-TU-pRM" secondAttribute="centerY" constant="40" id="sXY-2J-nZR"/>
+                            <constraint firstItem="UHO-WF-22u" firstAttribute="centerY" secondItem="KVR-a9-2K1" secondAttribute="centerY" constant="40" id="ty3-d5-eY2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -15,6 +15,8 @@ class AnotherViewController: UIViewController {
         print(#function)
         
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
+        view.backgroundColor = .yellow
     }
     
     
