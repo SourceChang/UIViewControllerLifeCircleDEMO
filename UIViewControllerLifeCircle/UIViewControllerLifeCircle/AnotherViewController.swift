@@ -12,75 +12,90 @@ class AnotherViewController: UIViewController {
     
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
         print(#function)
+        
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        
         print(#function)
+        
+        super.init(coder: aDecoder)
     }
     
     
     override func loadViewIfNeeded() {
-        super.loadViewIfNeeded()
-        
         print(#function)
+        
+        super.loadViewIfNeeded()
     }
     
     
     override func loadView() {
-        super.loadView()
-        
         print(#function)
+        
+        super.loadView()
     }
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         print(#function)
+        
+        super.viewDidLoad()
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
         print(#function)
+        
+        super.viewWillAppear(animated)
+    }
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print(#function)
+        
+        super.viewWillDisappear(animated)
     }
     
     
     override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
         print(#function)
+        
+        super.viewDidAppear(animated)
     }
+    
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        print(#function)
+        
+        super.viewDidDisappear(animated)
+    }
+    
     
     override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        
         print(#function)
+        
+        super.viewWillLayoutSubviews()
     }
+    
     
     override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
         print(#function)
+        
+        super.viewDidLayoutSubviews()
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
